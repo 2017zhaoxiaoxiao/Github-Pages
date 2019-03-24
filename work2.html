@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+    #searchButton {
+        width:200px;
+        height:40px;
+    }
+    #text{
+        width:250px;
+        height:40px;
+    }
+    </style>
+</head>
+<body>
+    <input type="search" placeholder="请输入想要查找的商品" id="text" />
+    <input type="button" value='搜索' id='searchButton'/>
+    <input type="button" value='×' id='delect'>
+    <p>最近搜索</p>
+    <div id='dd'></div>
+    
+    <script>
+    var i=0;
+    var searchButton=document.getElementById('searchButton');
+    var text=document.getElementById('text');
+    var delect=document.getElementById('delect');
+    var dd=document.getElementById('dd');
+    searchButton.onclick=function(){
+        if(i==0){
+        localStorage.setItem(i,text.value);
+        text1=document.createElement("p"); 
+        dd.appendChild(text1);
+        text1.innerHTML=text.value;   
+        i++;
+        }
+        else{
+            var a=1;
+            for(var j=0;j<=i-1;j++){
+                a=a&&(text.value!=localStorage.getItem(j));     
+            }
+            if(a==1){
+                localStorage.setItem(i,text.value);
+                text1=document.createElement("p"); 
+                dd.appendChild(text1);
+                text1.innerHTML=text.value;   
+                i++;
+            }
+        }
+    }
+    delect.onclick=function(){
+        localStorage.clear( );
+        dd.innerHTML="";
+        
+    }
+    </script>
+
+</body>
+</html>
