@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #a{
+            width: 300px; 
+            height: 200px;
+            font-size: 40px; 
+            color: #f60;
+            line-height:200px; 
+            text-align: center;
+        }
+        
+        #canvas{
+            position:absolute;
+            left:0;
+            top:0;
+            background-size: 300px 200px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="300px" height="200px"></canvas>
+    <script>
+        
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+        canvas.style.backgroundImage='url("img/10.jpg")';
+        context.beginPath();
+        context.fillStyle="#D1D1D1";
+        context.fillRect(0, 0, 300, 200); 
+        context.closePath();
+        context.globalCompositeOperation = 'destination-out';
+        var p=false;
+        canvas.onmouseup=function(){
+            p=false;
+        }
+        canvas.onmousedown=function(){
+            p=true;
+        }
+        canvas.onmousemove=function(e){
+            if(p){
+                var x=e.clientX;
+                var y=e.clientY;
+                context.beginPath();
+                context.fillStyle='white';
+                context.arc(x,y,10,0,2*Math.PI,true);
+                context.fill();
+                var imgData=context.getImageData(0,0,300,200);
+                var data=imgData.data;
+                var length=data.length;
+                var s=0;
+                for(var i=0;i<length;i+=4){
+                    var alpha=data[i+3];
+                    if(alpha<10)
+                        s++;
+                }
+                var percentage=s/(length/4);
+                 
+                  if(percentage>0.8)
+                        context.clearRect(0,0,300,200);
+                    
+            }
+        }
+        
+              
+        
+
+       // }
+        
+        
+    </script>
+</body>
+</html>
