@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        #container{
+            width:600px;
+            height:650px;
+            border:rgb(199, 194, 194) solid 2px;
+            background-size:600px 450px;
+            background-repeat:no-repeat;
+            box-shadow: 4px 4px rgb(199, 194, 194);
+            position:relative;
+            overflow: hidden;
+
+        }
+        img{
+            width:600px;
+            height:440px;
+            transform:scale(1,1);
+            opacity:1;
+            transition:transform 0.5s linear,opacity 0.5s linear;
+            
+           
+        }
+        .time{
+            width:60px;
+            height:60px;
+            border-radius: 30px;
+            background-color: orangered;
+            color:white;
+            text-align: center;
+            position:absolute;
+            right:40px;
+            top:40px;
+            font-weight: bold;
+        }
+        #zhaopian{
+            width:50px;
+            height:25px;
+            background-color: orangered;
+            color:white;
+            text-align: center;
+            position:absolute;
+            top:415px;
+            font-size: 14px;
+            line-height: 25px;
+            transition:top 0.5s linear;
+        }
+        #bottom{
+            width:600px;
+            height:200px;
+            position:absolute;
+            left:0px;
+            top:440px;
+            background-color: white;
+            transition: top 0.5s linear, height 0.5s linear;
+        }
+        h1{
+            margin-top: 30px;
+            margin-left: 30px;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .guojia{
+            margin-left: 30px;
+            font-size: 28px;
+            color:red;
+        }
+        #text{
+            transition: opacity 0.5s linear;
+            opacity: 0;
+            font-size: 22px;
+            margin-left:30px;
+            line-height: 40px;
+            color:#8a8888;
+            margin-right:30px;
+        }
+        .last{
+            color:rgb(163, 160, 160);
+            margin-left: 30px;
+            position: absolute;
+            left:30px;
+            font-size: 14px;
+            bottom:0px;
+            
+        }
+       
+        #container:hover #bottom {
+            top:255px;
+            height:390px;
+        
+        }
+        #container:hover #zhaopian{
+            top:230px;
+        }
+        #container:hover #text{
+            opacity:1;
+        }
+        #container:hover img{
+            transform:scale(1.2,1.2);
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="img/zhanqiao.jpg" alt="">
+        <div class="time">15 <br>五月</div>
+        <div id="zhaopian">
+            照片
+        </div>
+        <div id="bottom">
+            <h1>青岛栈桥</h1>
+            <p class="guojia">国家AAAA级旅游景区</p>
+            <p id="text">
+                青岛栈桥是青岛海滨风景区的景点之一，是国务院与1982年首批公布的国家风景名胜区。
+                青岛栈桥位于游人如织的青岛中山路南端，桥身从海岸深入如弯月般的青岛深处。桥身供游人
+                参观并在此停靠旅游船，
+                ，由此乘船可看海上青岛。
+            </p>
+            
+        </div>
+        <p class="last">10分钟 &nbsp;&nbsp;123分钟</p>
+    </div>
+</body>
+</html>
