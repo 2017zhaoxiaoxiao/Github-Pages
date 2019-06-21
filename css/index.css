@@ -15,32 +15,30 @@ p{
 header{
     width:100%;
     background-color: black;
-    height:46px;
-    
-
+    height:46px;   
 }
 #center1{
-    width:1200px;
+  
     margin:0 auto;
     height:46px;
    
 }
   #img1{
     float:left;
-    margin-left: 66%;
+    margin-left:60%;
     margin-top:10px; 
 }
 
  #tel{
     float:left;
-    margin-left: 2px;
+    margin-left: 0.5%;
     color:white;
     font-size: 20px;
     margin-top:10px; 
 }
 .denglu{
     float:left;
-    margin-left: 35px;
+    margin-left:1.5%;
     width:50px;
     height:20px;
     margin-top:10px;    
@@ -52,14 +50,14 @@ header{
     font-size: 14px;
     margin-top:10px;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 1%;
 }
 .zhuce{
     float:left;
     width:70px;
     height:20px;
     margin-top:10px;
-    margin-left: 20px; 
+    margin-left:1%; 
     
 }
 .zhuce a{
@@ -159,7 +157,7 @@ header{
     width:300px;
     height:48px;
     top:250px;
-    left:450px;
+    left:320px;
 }
 .form-control1{
     position: absolute;
@@ -234,7 +232,7 @@ header{
     position: absolute;
     float:left;
     top:250px;
-    left:750px;
+    left:620px;
     width:100px;
     height:48px;
     background-color: orangered;
@@ -252,7 +250,7 @@ header{
     float:left;
     position: absolute;
     top:250px;
-    left:330px;
+    left:200px;
     width:120px;
     height:48px;
     background-color: #d3d3d8;
@@ -271,7 +269,7 @@ header{
 }
 .among{
     width:100%;
-    height:3950px;
+    height:4320px;
     background-color:#dddddd; 
 }
 .among1{
@@ -282,7 +280,7 @@ header{
 }
 .transportation1{
     position: relative;
-    width:1200px;
+    /* width:1200px; */
     height:366px;
     margin:0 auto;
     border-radius: 5px;
@@ -310,7 +308,7 @@ header{
     top:50px;
 }
 .tran >.btn2{
-    width:175px;
+    width:50%;
     height:50px;
     position: absolute;
     right:0px;
@@ -322,7 +320,7 @@ header{
 }
 .transportation1>.des{
     position: absolute;
-    left:560px;
+    left:40%;
     top:25px;
 }
 .des1>h4{
@@ -348,10 +346,11 @@ header{
 }
 .transportation1>img{
     float:left;
+    width:80%
     
 }
 .transportation1>.yy{
-    width:263px;
+    width:20%;
     height:366px;
     float:left;
     background-color:#14316d; 
@@ -382,7 +381,18 @@ header{
     margin:0 auto;
     background-color: black;
 }
-
+.rou4>img{
+    width:100%;
+    height:370px;
+}
+.rou5>img{
+    width:100%;
+    height:360px;
+}
+.rou3>img{
+    width:100%;
+    height:290px;
+}
 .routes1{
    
     width:100%;
@@ -407,7 +417,7 @@ header{
 
 }
 .r-left{
-    width:668px;
+    width:100%;
     height:970px;
     margin:0 auto;
    
@@ -415,7 +425,6 @@ header{
 .srou1{
     width:100%;
     height:400px;
-   
     position: relative;
     
 }
@@ -489,7 +498,7 @@ header{
 }
 .routes{
     margin:0 auto;
-    width:1200px;
+    width:100%;
     height:1160px;
 
 }
@@ -510,13 +519,13 @@ header{
 }
 .routes>.left{
     float:left;
-    width:590px;
+    width:50%;
     height:1020px;
     
 }
 .routes>.right{
     float:left;
-    width:610px;
+    width:50%;
     height:1020px;
     
 }
@@ -541,6 +550,7 @@ header{
     margin-left: 36px;
     margin-top:20px; 
     color:white;
+    
 }
 .money{
     font-size: 20px;
@@ -563,21 +573,33 @@ header{
 .rou22 > p{
     font-size: 16px;
     margin-left: 36px;
-    margin-top:20px; 
+    margin-top:10px; 
     color:white;
 }
 
 .rou3{
-    width:610px;
+    width:100%;
     height:294px;
     margin-bottom:2px;
     position: relative;
 
 }
+.rou3>img{
+    width:100%;
+
+}
+.rou4>img{
+    width:100%;
+    
+}
+.rou5>img{
+    width:100%;
+    
+}
 .rou33{
-    width:610px;
+    width:100%;
     height:88px;
-    top:206px;
+    bottom:0px;
     position: absolute;
     background-color: black;
     opacity:0.5;
@@ -586,19 +608,19 @@ header{
 .rou33 > p{
     font-size: 16px;
     margin-left: 36px;
-    margin-top:20px; 
+    margin-top:10px; 
     color:white;
 }
 .rou4{
-    width:610px;
+    width:100%;
     height:360px;
     margin-bottom:2px;
     position: relative;
 }
 .rou44{
-    width:610px;
+    width:100%;
     height:88px;
-    top:268px;;
+    bottom: 0px;
     position: absolute;
     background-color: black;
     opacity:0.5;
@@ -607,20 +629,20 @@ header{
 .rou44> p{
     font-size: 16px;
     margin-left: 36px;
-    margin-top:20px; 
+    margin-top:10px; 
     color:white;
 }
 .rou5{
-    width:610px;
+    width:100%;
     height:360px;
     
     position: relative;
    
 } 
 .rou55{
-    width:610px;
+    width:100%;
     height:88px;
-    top:275px;
+    bottom:0px;
     position: absolute;
     background-color: black;
     opacity:0.5;
@@ -629,7 +651,7 @@ header{
 .rou55> p{
     font-size: 16px;
     margin-left: 36px;
-    margin-top:20px; 
+    margin-top:10px; 
     color:white;
 }
 .visaa{
@@ -641,12 +663,12 @@ header{
     display: none;
 }
 .visa{
-    width:1200px;
+   
     height:680px;
     margin:0 auto;
 }
 .visaa>.tt1{
-    width:668px;
+    width:100%;
     margin:0 auto;
     height:100px;
   
@@ -763,25 +785,26 @@ header{
 }
 .visa2{
     height:279px;
-    
+    width:99%;
 }
 .visa3{
     height:279px;
+    width:99%;
     
 }
 .visa4{
     height:279px;
-    width:100%;
+    width:99%;
    
 }
 .visa5{
     height:279px;
-    width:100%;
+    width:99%;
    
 }
 .v1{
     position: relative;
-        
+    width:99%;   
 }
 .v1>p{
     width:99%;
@@ -802,7 +825,7 @@ header{
         
 }
 .v2>p{
-    width: 99%;
+    width: 97%;
     height:50px;
     position: absolute;
     bottom:0px;
@@ -819,7 +842,7 @@ header{
 
 
 .more{
-    width:1200px;
+   
     margin:0 auto;
     height:214px;
     
@@ -868,7 +891,7 @@ header{
     margin-bottom: 13px;
 }
 .ff{
-    width:1200px;
+   
     height:352px;
     margin:0 auto;
 }
@@ -894,7 +917,7 @@ header{
     font-size: 14px;
 }
 .hh{
-    width:1200px;
+    
     margin:0 auto;
     height:476px;
     margin-bottom: 2px;
@@ -904,7 +927,7 @@ header{
     height:476px;
 }
 .last{
-    width:1200px;
+   
     height:400px;
     margin:0 auto;
     background-color: #14316d;
@@ -940,10 +963,11 @@ header{
 
 }
 .bto{
-    width:1200px;
+   
     height:530px;
     margin:0 auto;
     padding-top: 40px;
+    padding-left: 20px;
 
     
 }
@@ -970,7 +994,7 @@ header{
     font-size: 12px;
     width:545px;
     margin-top: 190px;
-    margin-left:340px;
+    margin-left:30%;
 
 }
 .life{
@@ -983,7 +1007,7 @@ header{
 
 }
 .life>.life1{
-    width:668px;
+    width:100%;
     height:100px;
     margin:0 auto;
 
@@ -1006,13 +1030,13 @@ header{
     padding-top:47px;
 }
 .life2 > img{
-    width:668px;
+    width:100%;
     height:330px;
     margin:0 auto;
-    margin-left:30px;
+    /* margin-left:30px; */
 }
 .life3{
-    width:668px;
+    width:100%;
     margin:0 auto;
     height:230px;
    
@@ -1027,14 +1051,14 @@ header{
 
 }
 .life4{
-    width:668px;
+    width:100%;
     height:330px;
     margin:0 auto;
 
 }
 .life4>img{
 
-    width:668px;
+    width:100%;
     margin:0 auto;
     height:330px;
 }
@@ -1046,7 +1070,7 @@ header{
     background-color: white;
 }
 .s1{
-    width:688px;
+    width:100%;
     height:100px;
     margin:0 auto;
     padding-top:30px;
@@ -1058,7 +1082,7 @@ header{
     
 }
 .s2{
-    width:668px;
+    width:100%;
     height:170px;
     margin:0 auto;
     padding-top:30px;
